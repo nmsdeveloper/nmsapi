@@ -1,0 +1,95 @@
+/*IMAGE DESIGN*/
+.nms--images {
+  padding: 0;
+}
+.nms--images .nms--carousel__item {
+  width: 100%;
+  height: 100%;
+}
+.nms--images .nms--carousel__pagination {
+  position: absolute;
+  bottom: 0.5rem;
+  left: 0;
+  right: 0;
+}
+/*IMAGE DESIGN*/
+
+/*CARD DESIGN*/
+.nms--cards {
+  padding: 0.5rem 1.5rem;
+}
+.nms--cards .nms--carousel__item {
+  float: left;
+}
+/*CARD DESIGN*/
+
+/*NMS CAROUSEL DESIGN*/
+.nms--carousel {
+  position: relative;
+  width: 100%;
+  height: auto;
+  outline: none;
+  overflow: hidden;
+}
+
+.nms--carousel__container {
+  position: relative;
+  display: flex;
+  transform: translate3d(0, 0, 0);
+  transition: transform 0.5s linear;
+}
+.nms--carousel__navigation-prev,
+.nms--carousel__navigation-next {
+  position: absolute;
+  width: 75px;
+  height: 75px;
+  top: 50%;
+  margin-top: -1.5rem;
+  right: -1rem;
+  opacity: 1;
+  transform: translateY(-50%);
+  transition: transform 0.5s linear, display 0.5s linear;
+}
+.nms--carousel__navigation-prev {
+  left: -1rem;
+  background: url("../icons/angle-left-b.svg");
+}
+.nms--carousel__navigation-next {
+  background: url("../icons/angle-right-b.svg");
+}
+.nms--carousel__navigation-hidden {
+  opacity: 0.3;
+}
+
+.nms--carousel__pagination {
+  text-align: center;
+}
+
+.nms--carousel__pagination-puce {
+  cursor: pointer;
+  background-color: #fff;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-left: 0.25rem;
+  box-shadow: 0 2px 5px #3232321a;
+  transition: transform 0.5s linear;
+}
+
+.nms--carousel__pagination-puce-active,
+.nms--carousel__pagination-puce:hover {
+  transform: scale(1.3);
+}
+/*NMS CAROUSEL DESIGN*/
+
+/*ANIMATIONS CAROUSEL*/
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/*ANIMATIONS CAROUSEL*/
